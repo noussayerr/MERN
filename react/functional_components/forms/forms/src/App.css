@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+  margin: auto;
+  width: 500px;
+}
+.msg{
+  background-color: red;
+}
