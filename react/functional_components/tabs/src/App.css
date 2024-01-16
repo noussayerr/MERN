@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  font-family: cursive;
+}
+.tabs{
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.tab{
+  width: 65px;
+  border: 3px solid black;
+}
+.content{
+  margin: auto;
+  width: 800px;
+  height: 100px;
+  border: 3px solid black;
+  padding-top: 50px;
+}
