@@ -1,0 +1,28 @@
+*{
+  font-family: cursive;
+}
+.App {
+  width: 500px;
+  margin: 100px auto;
+}
+
+input[type=text]{
+  border-radius: 5px;
+  width: 250px;
+  height: 30px;
+}
+
+input[type=submit]{
+  width: 100px;
+  border-radius: 5px;
+  height: 35px;
+  background-color: blue;
+  color: aliceblue;
+  border: none;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
