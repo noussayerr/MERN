@@ -1,30 +1,19 @@
-import React from 'react';
+import React,{useState}from 'react';
 import './App.css' ;
-import MyNewComponent from './components/new';
-
+import Newbox from './components/new';
+import Display from './components/display'
 function App() {
-  
-  const App= {
-    textAlign : 'center',
+  const [color,setColor]=useState([]);
+  const newbox=(newcolor)=>{
+    return (setColor([...color,newcolor]))
   }
-  
+
   return (  
-    <div style={App}>
-        <MyNewComponent her={ 
-        <div>
-          <h1>hey</h1> 
-          <p>hey you</p>
-        </div>
-         }
-         fin={
-          <h1>hey fin</h1>
-         }>
-            <h1>These are children</h1>
-            <p>This is a child</p>
-            <p>This is another child</p>
-            <p>This is even another child</p>
-        </MyNewComponent>  
+    <div className='App'>
+      <Newbox newbox={newbox} />
+      <Display color={color}/>
     </div>
+    
   );
 }
     
