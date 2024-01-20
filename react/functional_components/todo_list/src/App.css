@@ -20,9 +20,26 @@ input[type=submit]{
   color: aliceblue;
   border: none;
 }
+input[type=button]{
+  width: 100px;
+  border-radius: 5px;
+  height: 35px;
+  background-color: rgb(255, 0, 0);
+  color: aliceblue;
+  border: none;
+}
 form{
   display: flex;
   flex-direction: column;
   gap: 20px;
 
+}
+.list{
+  display: flex;
+  margin-top:20px ;
+  align-items: center;
+  gap: 30px;
+}
+.complete{
+  text-decoration:line-through;
 }

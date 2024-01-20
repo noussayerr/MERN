@@ -2,21 +2,17 @@ import React from 'react'
 
 const List=(prop)=> {
   const {list}=prop;
-  const {setList}=prop;
-  
   return (
     <div>
         {list.map((a,i)=>(
-            <div key={i}>
-                <p>
-                    {a}
-                <input type="checkbox" id="scales" name="scales"  />
-                <input type="button" value="Delete" onClick={(e)=>prop.Delete(i)}
-             />
-                </p>
+            <div className='list' key={i}>
+                <p className={a.statu ?"complete":""}>{a.cont}</p>
+                
+                <input type="checkbox" id="scales" name="scales" onChange={()=>prop.change(a)}  />
+                <input type="button" value="Delete" onClick={()=>prop.Delete(i)}/>
             </div>
-
         ))}
+        
     </div>
   )
 }
