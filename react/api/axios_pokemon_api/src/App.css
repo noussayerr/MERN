@@ -1,0 +1,17 @@
+.App {
+  font-family: cursive;
+  width: 150px;
+  margin: 50px auto;
+}
+.btn{
+  background-color: black;
+  color: aliceblue;
+  height: 35px;
+  width: 150px;
+  font-family: cursive;
+  border-radius: 5px;
+  border: none;
+}
+li{
+  padding: 10px;
+}
