@@ -8,12 +8,13 @@ function App() {
     setPokemon(data.results)
   )
     )
+  .catch((err)=>console.log(err))
   return (
     <div className="App">
       {pokemon.map((pi,i)=>{
         return(
           <div>
-            <p key={i}>{pi.name}</p>
+            <li key={i}>{pi.name}</li>
           </div>
         )
       })}
