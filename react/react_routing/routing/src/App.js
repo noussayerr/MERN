@@ -1,16 +1,16 @@
 import './App.css';
-import Home from './components/Home';
-import ParamsComponent from './components/ParamsComponent';
 import { Routes, Route} from "react-router-dom";
+import Home from './components/Home';
+import Params from './components/Params';
 
 function App() {
   return (
     <div className="App">
-
       <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/:word" element={<ParamsComponent />} />
-        <Route  path="/:word/:color/:bgCol" element={<ParamsComponent />}/>
+        <Route path="/:word" element={<Params />} />
+        <Route  path="/:word/:color" element={<Params />}/>
+        <Route  path="/:word/:color/:bgc" element={<Params />}/>
       </Routes>
 
     </div>
