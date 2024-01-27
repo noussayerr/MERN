@@ -14,13 +14,13 @@ function Form() {
         <form onSubmit={subform}>
             <label htmlFor="searchfor">Searchfor :</label>
             <select onChange={(e)=>setWor(e.target.value)}>
-                <option value=""  >*******</option>
+                <option value="" >*******</option>
                 <option value="people">people</option>
                 <option value="planets">planets</option>
             </select>
             <label htmlFor="id">ID :</label>
             <input name="id" type="text" onChange={(e)=>setId(e.target.value)}/>
-            <input type="submit" value="Search..." />
+            <input className='btn' type="submit" value="Search..." />
         </form>
     </div>
   )
