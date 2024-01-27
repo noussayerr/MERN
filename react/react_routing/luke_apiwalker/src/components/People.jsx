@@ -8,14 +8,12 @@ const People=()=>{
     axios.get(`https://swapi.dev/api/people/${id}`)
     .then(res=>setPeople([res.data]))
     
-    
-  },[])
-  console.log(people)
+  },[id])
   return (
     <div>
       {people.map((p)=>{
         return(
-          <div key={id}>
+          <div className='result' key={id}>
 
             <h1>{p.name}</h1>
             <h3>Height : {p.height}</h3>

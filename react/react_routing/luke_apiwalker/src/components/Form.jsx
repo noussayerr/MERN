@@ -14,7 +14,7 @@ function Form() {
         <form onSubmit={subform}>
             <label htmlFor="searchfor">Searchfor :</label>
             <select onChange={(e)=>setWor(e.target.value)}>
-                <option value="">*******</option>
+                <option value=""  >*******</option>
                 <option value="people">people</option>
                 <option value="planets">planets</option>
             </select>
