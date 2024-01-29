@@ -16,7 +16,7 @@ function Joke() {
   return (
     <div className="container">
       <h3>Don't Laugh Challenge</h3>
-      <div id="joke" className="joke" data-value='ddd'>{joke.joke}</div>
+      <div id="joke" className="joke">{joke.joke}</div>
       <button className="btn" onClick={changejoke}>Get Another Joke</button>
     </div>
   )
