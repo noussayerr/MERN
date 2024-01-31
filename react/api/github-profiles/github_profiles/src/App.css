@@ -23,7 +23,7 @@ body {
 }
 
 .user-form input {
-  width:500px;
+  width:100%;
   display: block;
   background-color: #4c2885;
   border: none;
@@ -76,18 +76,21 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  padding: 2px;
+  gap: 10px;
   max-width: 400px;
 }
 
 .user-info ul li {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
 .user-info ul li strong {
   font-size: 0.9rem;
   margin-left: 0.5rem;
+  
 }
 
 .repo {
@@ -110,4 +113,8 @@ body {
   .user-form {
     max-width: 400px;
   }
+}
+a{
+  text-decoration: none;
+  color: white;
 }
