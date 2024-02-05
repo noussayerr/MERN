@@ -1,0 +1,91 @@
+.App {
+    width: 1000px;
+    margin: 100px auto;
+    font-family: cursive;
+  }
+  h1{
+    text-align: center;
+  }
+  .main{
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    margin: 0px auto;
+  
+  }
+  form{
+    width: 1000px;
+  }
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .labels{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  input{
+    width:250px;
+    border-radius: 5px;
+    height: 25px;
+    border: 2px solid black;
+    
+  }
+  .btn{
+    width: 200px;
+    color: white;
+    border: 3px solid black;
+    background-color: #0019F8;
+    height: 30px;
+    margin: 30px 40%;
+    font-family: cursive;
+    font-size: large;
+  }
+  h2{
+    text-align: center;
+  }
+  Link{
+    text-align: center;
+  }
+  .products{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    margin-top: 20px;
+  }
+  .link{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    width: 200px;
+  }
+  .edit_delete{
+    
+    display: flex;
+    gap: 50px;
+  }
+  .Edit{
+    text-decoration: none;
+    color: white;
+    background-color: #0019F8;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: large;
+    width: 100px;
+  }
+  .delete{
+    border: 3px solid black;
+    width: 100px;
+    background-color: #ff0000;
+    height: 30px;
+    font-family: cursive;
+    font-size: large;
+    border-radius: 5px;
+    color: black;
+  }
