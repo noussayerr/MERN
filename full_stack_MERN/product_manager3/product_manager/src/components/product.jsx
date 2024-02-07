@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState,useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
  function Product() {
+    const nav=useNavigate();
     const [product,setProduct]=useState({})
     const {id}=useParams();
     useEffect(()=>{
@@ -16,6 +17,7 @@ import axios from 'axios';
         <h1>{product.title}</h1>
         <h2>Price :{product.price}</h2>
         <h2>Description :{product.description}</h2>
+        <button className='homebtn' onClick={(e)=>nav('/')} >Home</button>
     </div>
   )
 }

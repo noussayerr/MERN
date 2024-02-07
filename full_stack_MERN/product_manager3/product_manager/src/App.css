@@ -89,3 +89,15 @@
     border-radius: 5px;
     color: black;
   }
+  .homebtn{
+    border: 3px solid black;
+    position: absolute;
+    background-color: #0019F8;
+    top: 8px;
+    left: 16px;
+    height: 30px;
+    font-family: cursive;
+    font-size: large;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+  }

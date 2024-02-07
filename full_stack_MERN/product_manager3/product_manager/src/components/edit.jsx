@@ -51,6 +51,7 @@ const Edit = () => {
             </div>
             <input className='btn' type="submit" value="Edit" />
         </form>
+        <button className='homebtn' onClick={(e)=>nav('/')} >Home</button>
     </div>
   )
 }
