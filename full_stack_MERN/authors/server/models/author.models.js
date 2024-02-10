@@ -4,7 +4,7 @@ const authorSchema=new mongoose.Schema({
     name:{
         type:String,
         required:[true,"{path} is required"],
-        minLength:[3,"{path} must have at least 3 chars"]
+        minLength:[3,"{PATH} must have at least 3 chars"]
     }
 },{timestamps:true})
 

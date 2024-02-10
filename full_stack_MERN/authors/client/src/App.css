@@ -31,7 +31,7 @@ table {
   text-align: center;
 }
 .btn{
-  height: 30px;
+  height: 35px;
 
 }
 input{
@@ -42,6 +42,7 @@ input{
   margin-left: 20px;
 } 
 .submit{
+  text-align: center;
   margin-top: 30px;
   font-family: cursive;
   height: 30px;

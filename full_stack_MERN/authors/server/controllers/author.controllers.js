@@ -14,14 +14,14 @@ module.exports.oneAuthor=(req,res)=>{
 
 module.exports.createAuthor=(req,res)=>{
     author.create(req.body)
-    .then(createdAuthor=>res.json(createdAuthor))
-    .catch((err)=>res.json(err))
+    .then(createdAuthor=>res.status(200).json(createdAuthor))
+    .catch((err)=>res.status(400).json(err))
 }
 
 module.exports.updateAuthor=(req,res)=>{
     author.findOneAndUpdate({_id:req.params.id},req.body, {new:true,runValidators:true})
-    .then(updatedAuthor=>res.json(updatedAuthor))
-    .catch((err)=>res.json(err))
+    .then(updatedAuthor=>res.status(200).json(updatedAuthor))
+    .catch((err)=>res.status(400).json(err))
 }
 
 module.exports.deleteAuthor=(req,res)=>{
