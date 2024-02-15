@@ -11,7 +11,7 @@ const Main = () => {
     .catch((err)=>console.log(err))
   });
   const deletePlayer=(id)=>{
-    axios.delete("http://localhost:5000/api/players"+ id)
+    axios.delete("http://localhost:5000/api/players/"+ id)
   }
   return (
     <div>

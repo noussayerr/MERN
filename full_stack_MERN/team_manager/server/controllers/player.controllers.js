@@ -16,3 +16,13 @@ module.exports.deletePlayer=(req,res)=>{
     .then(deletedPlayer=>res.json(deletedPlayer))
     .catch((err)=>res.json(err))
 }
+module.exports.updatePlayer = (req, res) => {
+    player.findOneAndUpdate({ _id: req.params.id }, req.body, {
+      new: true,
+      runValidators: true,
+    })
+      .then((updatedPlayer) => {
+        res.json(updatedPlayer);
+      })
+      .catch((err) => res.status.json(err));
+  };
