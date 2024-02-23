@@ -31,9 +31,9 @@ function Game() {
   };
   
   return (
-    <div>
+    <div className='main'>
       <h1> Player status - {gameId}</h1>
-      <div>
+      <div className='games'>
         <Link to={'/game/1'}>Game 1</Link>
         <Link to={'/game/2'}>Game 2</Link>
         <Link to={'/game/3'}>Game 3</Link>

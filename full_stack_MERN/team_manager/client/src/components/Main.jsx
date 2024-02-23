@@ -14,9 +14,11 @@ const Main = () => {
     axios.delete("http://localhost:5000/api/players/"+ id)
   }
   return (
-    <div>
-      <Link to={'/'}>List</Link>
-      <Link to={'/create'}>Add Player</Link>
+    <div className='main'>
+      <div className='nav'>
+        <Link to={'/'}>List</Link>
+        <Link to={'/create'}>Add Player</Link>
+      </div>
         <table>
             <thead>
             <tr>

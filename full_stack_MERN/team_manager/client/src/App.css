@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  width: 80%;
+  margin: 3% auto;
+  background-color: #EEEEEE;
+  padding: 2%;
 }
 .greenbtn{
   background-color: green;
@@ -9,4 +13,54 @@
 }
 .yellowbtn{
   background-color: yellow;
+}
+.main{
+  width: 95%;
+  padding: 1%;
+  margin: 3% auto;
+  background-color: white;
+  border: 3px solid black;
+}
+.nav{
+  display: flex;
+  gap: 1%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table,th,td{
+  border-collapse: collapse;
+  border: 2px solid black;
+  margin: 2% auto;
+}
+.btn{
+  background-color: red;
+  border: 2px solid black;
+  width: 90%;
+}
+.games {
+  display: flex;
+  justify-content: space-evenly;
+}
+button{
+  width: 20%;
+  margin-left: 2%;
+  border: 3px solid black;
+  background-color: rgb(255, 255, 255);
+}
+form{
+  width: 95%;
+  padding: 1%;
+  margin: 3% auto;
+  background-color: white;
+  border: 3px solid black;
+}
+input{
+  border: 2px solid black;
+  height: 20px;
+  width: 50%;
+}
+p{
+  color: red;
 }

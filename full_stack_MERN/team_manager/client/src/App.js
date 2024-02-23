@@ -9,8 +9,10 @@ import Game from './components/Games';
 function App() {
   return (
     <div className="App">
-      <Link to={"/"}>Manage players</Link>
-      <Link to={"/game/1"}>Manage players status</Link>
+      <div className='nav'>
+        <Link to={"/"}>Manage players</Link>|
+        <Link to={"/game/1"}>Manage players status</Link>
+      </div>
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/create'  element={<Create />}/>

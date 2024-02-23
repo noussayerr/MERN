@@ -24,10 +24,14 @@ const Create = () => {
         
       }
   return (
-    <div>
-        <Link to={'/'}>List</Link>
-        <Link to={'/create'}>Add Player</Link>
+    <div className='main'>
+        <div className='nav'>
+            <Link to={'/'}>List</Link>
+            <Link to={'/create'}>Add Player</Link>
+
+        </div>
         <form onSubmit={subform} >
+            <h2>Add player</h2>
             {
                 errs.name?
                 <p>{errs.name.message}</p>
@@ -46,7 +50,7 @@ const Create = () => {
             <br />
             <label htmlFor="preferred">Preferred Position :</label>
             <input type="text" onChange={(e)=>setPosition(e.target.value)} value={preferred_position}/>
-            <button type='submit'></button>
+            <button type='submit'>Add</button>
         </form>
     </div>
   
