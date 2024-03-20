@@ -6,10 +6,12 @@ import axios from 'axios';
 function App() {
   const [firstName,setName]=useState("");
   const [file, setFile] = useState()
-  
+  console.log(file)
   const subform=(e)=>{
     const formData = new FormData()
-    formData.append("image", file)
+    for (let i = 0; i < file.length; i++) {
+      formData.append('photo', file[i]);
+    }
     formData.append("firstName",firstName)
     
     e.preventDefault();
@@ -21,12 +23,12 @@ function App() {
       <label>firstname :</label>
         <input type='text' onChange={(e)=>{setName(e.target.value)}} />
         <input
-          onChange={e => setFile(e.target.files[0])} 
+          onChange={e => setFile(e.target.files)} 
           type="file" 
           accept="image/*"
+          multiple
         ></input>
         <input type='submit' />
-        <img src='http://localhost:8000/images/21221965c5adbf89af8221180e121843' />
     </form>
   );
 }

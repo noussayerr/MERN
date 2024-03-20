@@ -6,7 +6,7 @@ const upload = multer({ dest: 'images/' })
 
 module.exports=app=>{
     app.get("/api/multer",multercontroller.findall)
-    app.post("/api/multer", upload.single('image'),multercontroller.create)
+    app.post("/api/multer", upload.array('photo'),multercontroller.create)
     app.use('/images', express.static('images'))
     app.get('/images/:imageName', (req, res) => {
         const imageName = req.params.imageName

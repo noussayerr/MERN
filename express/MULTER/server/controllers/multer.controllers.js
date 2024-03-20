@@ -4,9 +4,12 @@ module.exports ={
     
     create: async (req, res) => {
         
-        
-        console.log(req.file.filename)
-
+       const photos=req.files
+       const arr=[]
+       for (let i = 0; i < photos.length; i++){
+            arr.push(photos[i].fieldname)
+    }
+console.log(arr)
     },
     findall : (req,res)=>{
         Multer.find()
