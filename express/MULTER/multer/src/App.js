@@ -29,6 +29,7 @@ function App() {
           multiple
         ></input>
         <input type='submit' />
+        <img src='http://localhost:8000/images/21221965c5adbf89af8221180e121843' />
     </form>
   );
 }
