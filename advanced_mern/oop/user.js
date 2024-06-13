@@ -12,7 +12,15 @@ class User {
     makeWithdrawal(amount) {
       this.accountBalance -= amount;
     }
-  
+    transferMoney(otherUser, amount){
+      if (this.accountBalance<amount){
+        console.log("you don't have this amount in your account ")
+      }
+      else{
+        this.accountBalance-=amount;
+        otherUser.accountBalance+=amount
+      }
+    }
     displayInfo() {
       console.log(`Name: ${this.name}, Account Balance: $${this.accountBalance}`);
     }
@@ -22,6 +30,7 @@ class User {
   const tom = new User("Tom Servo", "tommonster@gizmonic.com");
   
   tom.makeDeposit(200);
-  tom.displayInfo()
+  tom.transferMoney(crow,300)
+  crow.displayInfo()
 
   
